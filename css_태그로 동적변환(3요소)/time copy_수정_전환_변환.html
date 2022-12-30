@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* move box를 수정
+        처음에서 진행 할때 빨 파란, 노란 , 초록색으로 변환 */
+        div{
+            width: 100px; height: 100px;  background: red;
+            position: relative;
+            animation: movebox 10s infinite;
+        }
+        /* 각모서리로 이동하며 색의 변화를 줌 */
+        /* @keyframes  movebox {
+            from{left: 0px; top:0px; background: red;}
+            25%{left: 300px; top:0px; background:blue;}
+            50%{left: 300px; top:300px; background:yellow;}
+            75%{left: 0px; top:300px; background: green;}
+            to{left: 0px; top:0px; background: red;}
+        } */
+        
+        /* 각 모서리로 이동시에 transform property 의 rotate를 이용하여 굴러가듯이 구현
+        sol) 각 모서리로 갈때 마다 360deg씩 더해가며 한 방향으로 굴러가게 구현했다. */
+        @keyframes  movebox {
+            from{transform: rotate(0); left: 0px; top:0px; border-radius: 0%; background: red; }
+            12.5%{ border-radius: 50%;}
+            25%{transform:rotate(360deg); left: 300px; top:0px; border-radius: 0%; background:blue;}
+            37.5%{ border-radius: 50%;}
+            50%{transform:rotate(720deg); left: 300px; top:300px; border-radius: 0%;  background:yellow;}
+            62.5%{ border-radius: 50%;}
+            75%{transform:rotate(1080deg); left: 0px; top:300px; border-radius: 0%; background: green;}
+            87.5%{border-radius: 50%;}
+            to{transform:rotate(1440deg);  left: 0px; top:0px; border-radius: 0%;  background: red;}
+        }
+       
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bomb{
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+        h3{
+            animation-name: bomb; /*키프레임 뒤 이름*/
+            animation-duration: 5s; /*5초동안 진행*/
+            animation-timing-function: ease; /*(처음과 시작이 느려짐)실행 방법을 설정*/
+            animation-delay: 1s; /*애니매이션 지연 시간 설정(1초 지연 후 시작됨) , 음의 값일 때는 그만큼 진행된후의 모습에서 시작함.*/
+            animation-iteration-count: infinite; /*무한횟수*/
+            animation-direction: alternate; /*진행 방향을 설정한다. 정상은 from 에서 to 인데 , alternate는 갔다 왔다 (from to사이를)*/
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>꽝! 꽝! 꽝! 꽝! 꽝!</h3>
+    <hr>
+    <p>꽝! 글자가 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션 이다.</p>
+</body>
+</html> 

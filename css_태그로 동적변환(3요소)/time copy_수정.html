@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* move box를 수정
+        처음에서 진행 할때 빨 파란, 노란 , 초록색으로 변환 */
+        div{
+            width: 100px; height: 100px;  background: red;
+            position: relative;
+            animation: movebox 10s infinite;
+        }
+        /* @keyframes  movebox {
+            from{left: 0px; top:0px; background: red;}
+            25%{left: 300px; top:0px; background:blue;}
+            50%{left: 300px; top:300px; background:yellow;}
+            75%{left: 0px; top:300px; background: green;}
+            to{left: 0px; top:0px; background: red;}
+        } */
+        
+        @keyframes  movebox {
+            from{left: 0px; top:0px; border-radius: 0%; background: red;}
+            12.5%{ border-radius: 50%;}
+            25%{left: 300px; top:0px; border-radius: 0%; background:blue;}
+            37.5%{ border-radius: 50%;}
+            50%{left: 300px; top:300px; border-radius: 0%;  background:yellow;}
+            62.5%{ border-radius: 50%;}
+            75%{left: 0px; top:300px; border-radius: 0%; background: green;}
+            87.5%{border-radius: 50%;}
+            to{left: 0px; top:0px; border-radius: 0%;  background: red;}
+        }
+       
+    </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

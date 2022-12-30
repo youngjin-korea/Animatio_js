@@ -1,0 +1,24 @@
+@keyframes애니메이션 이름: 0% ~ 100%  까지 키프레임 지정,
+from(0%) ~ to(100%)
+
+animation:단축 프로퍼티로 아래 순서대로 값 나열 한다.
+
+animation-name : 애니메이션 이름 
+
+animation-duration:  기본 (0) , 실행 시간 초 단위
+
+animation-timing-function:
+기본은 ease -천천히 시작한 다음 빠르게 그리고 천천히 끝냄
+ease-in:느린 시작
+ease-out: 느린 종료
+ease-in-out :느린 시작과 느린 속도로 진행
+linear: 처음부터 끝까지 동일한 속도로 애니메이션
+
+animation- delay 기본 0 , 시간 초 애니메이션 지연시간 , 음수가능(-2s는 2초 동안 진행된 상태에서 시작한다.)
+
+animation-iteration-count: 기본1 , 정수값, infinite (애니메이션 반복 횟수)
+
+animation -direction: 기본 normal (정상적으로 앞으로 진행), reverse ,alternate,reverse-alternate
+
+reverse
+animation

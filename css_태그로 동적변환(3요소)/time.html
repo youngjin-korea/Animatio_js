@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ease{
+            width: 100px; height: 50px; background: red; 
+            animation: tf_ease 5s ease infinite alternate;
+        }
+        @keyframes tf_ease {
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+
+        div.tf_easein{
+            width: 100px; height: 50px; background: red; 
+            animation: tf_ease 5s ease-in infinite alternate;
+        }
+        @keyframes tf_easein {
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+        
+        div.tf_easeout{
+            width: 100px; height: 50px; background: red; 
+            animation: tf_ease 5s ease-out infinite alternate;
+        }
+        @keyframes tf_easeout {
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+
+        div.tf_easeinout{
+            width: 100px; height: 50px; background: red; 
+            animation: tf_ease 5s ease-in-out infinite alternate;
+        }
+        @keyframes tf_easeinout {
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+
+        div.tf_linear{
+            width: 100px; height: 50px; background: red; 
+            animation: tf_linear 5s linear infinite alternate;
+        }
+        @keyframes tf_linear {
+            from{font-size: 500%;}
+            to{font-size: 100%;}
+        }
+    </style>
+</head>
+<body>
+   <div class="ease">ease</div>
+   <br>
+   <div class="tf_easein">ease-in</div>
+   <br>
+   <div class="tf_easeout">ease-out</div>
+   <br>
+   <div class="tf_easeinout">ease-in-out</div>
+   <br>
+   <div class=" tf_linear">linear</div>
+   <br>
+</body>
+</html>

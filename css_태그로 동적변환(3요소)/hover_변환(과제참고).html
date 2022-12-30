@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ani_td{
+           width: 80px;
+           height: 40px;
+           background: yellow;
+           border: red solid 2px;
+           color: blue;
+           font-weight: bold;
+           font-size: 15px;
+           transition: all 1s;
+           border-radius: 5px;
+           opacity: 1;
+           vertical-align: middle;
+           text-align: center;
+            /* 모든 프로퍼티에 적용, 전환시간 1초 시작과 끝이 느려지게 구현 */
+        }
+        .ani_td:hover{
+            transform: translate(100px,0px) scale(2,2);
+            opacity: 0.6; 
+            background: blue;
+            color: yellow;
+            width: 110px;
+            height: 70px;
+            font-size: 30px;
+
+            
+            /* 360도 회전하며 동시에 커지게 구현, 색도 점차적으로 변환red -> yellow */
+        }
+    </style>
+</head>
+<body>
+    <table class="ani_td">
+        <tr><td>animation</td></tr>
+    </table>
+</body>
+</html>

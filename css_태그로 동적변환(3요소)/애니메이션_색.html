@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes textcoloranimation{
+            0%{color: blue;}   /*0% 100%를 from to로 대체가능*/
+            30%{color: green;}
+            100%{color: red;}
+        }
+        span{
+            animation-name: textcoloranimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; /*반복횟수*/
+        }
+    </style>
+    <!--  -->
+</head>
+<body>
+    <p><span>span</span>텍스트를 5초에 blue, green, red로 무제한 반복한다.</p>
+</body>
+</html>
